@@ -1,0 +1,440 @@
+[2024-07-20T19:32:33.628+0000] {processor.py:161} INFO - Started process (PID=168) to work on /opt/airflow/dags/etl_dags.py
+[2024-07-20T19:32:33.628+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_dags.py for tasks to queue
+[2024-07-20T19:32:33.630+0000] {logging_mixin.py:188} INFO - [2024-07-20T19:32:33.629+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/etl_dags.py
+[2024-07-20T19:32:33.637+0000] {logging_mixin.py:188} INFO - [2024-07-20T19:32:33.636+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/etl_dags.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/etl_dags.py", line 29, in <module>
+    extract_data = PostgresToGCSOperator(
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/google/cloud/transfers/postgres_to_gcs.py", line 109, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 423, in apply_defaults
+    raise AirflowException(f"missing keyword arguments {display}")
+airflow.exceptions.AirflowException: missing keyword arguments 'bucket', 'filename'
+[2024-07-20T19:32:33.637+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/etl_dags.py
+[2024-07-20T19:32:33.649+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_dags.py took 0.023 seconds
+[2024-07-20T19:33:04.120+0000] {processor.py:161} INFO - Started process (PID=173) to work on /opt/airflow/dags/etl_dags.py
+[2024-07-20T19:33:04.125+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_dags.py for tasks to queue
+[2024-07-20T19:33:04.131+0000] {logging_mixin.py:188} INFO - [2024-07-20T19:33:04.131+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/etl_dags.py
+[2024-07-20T19:33:04.145+0000] {logging_mixin.py:188} INFO - [2024-07-20T19:33:04.143+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/etl_dags.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/etl_dags.py", line 29, in <module>
+    extract_data = PostgresToGCSOperator(
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/google/cloud/transfers/postgres_to_gcs.py", line 109, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 423, in apply_defaults
+    raise AirflowException(f"missing keyword arguments {display}")
+airflow.exceptions.AirflowException: missing keyword arguments 'bucket', 'filename'
+[2024-07-20T19:33:04.145+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/etl_dags.py
+[2024-07-20T19:33:04.168+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_dags.py took 0.052 seconds
+[2024-07-20T19:33:34.538+0000] {processor.py:161} INFO - Started process (PID=178) to work on /opt/airflow/dags/etl_dags.py
+[2024-07-20T19:33:34.539+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_dags.py for tasks to queue
+[2024-07-20T19:33:34.543+0000] {logging_mixin.py:188} INFO - [2024-07-20T19:33:34.543+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/etl_dags.py
+[2024-07-20T19:33:34.556+0000] {logging_mixin.py:188} INFO - [2024-07-20T19:33:34.554+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/etl_dags.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/etl_dags.py", line 29, in <module>
+    extract_data = PostgresToGCSOperator(
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/google/cloud/transfers/postgres_to_gcs.py", line 109, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 423, in apply_defaults
+    raise AirflowException(f"missing keyword arguments {display}")
+airflow.exceptions.AirflowException: missing keyword arguments 'bucket', 'filename'
+[2024-07-20T19:33:34.556+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/etl_dags.py
+[2024-07-20T19:33:34.571+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_dags.py took 0.038 seconds
+[2024-07-20T19:34:04.967+0000] {processor.py:161} INFO - Started process (PID=183) to work on /opt/airflow/dags/etl_dags.py
+[2024-07-20T19:34:04.968+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_dags.py for tasks to queue
+[2024-07-20T19:34:04.972+0000] {logging_mixin.py:188} INFO - [2024-07-20T19:34:04.972+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/etl_dags.py
+[2024-07-20T19:34:05.015+0000] {logging_mixin.py:188} INFO - [2024-07-20T19:34:05.014+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/etl_dags.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/etl_dags.py", line 29, in <module>
+    extract_data = PostgresToGCSOperator(
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/google/cloud/transfers/postgres_to_gcs.py", line 109, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 423, in apply_defaults
+    raise AirflowException(f"missing keyword arguments {display}")
+airflow.exceptions.AirflowException: missing keyword arguments 'bucket', 'filename'
+[2024-07-20T19:34:05.015+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/etl_dags.py
+[2024-07-20T19:34:05.034+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_dags.py took 0.072 seconds
+[2024-07-20T19:34:35.392+0000] {processor.py:161} INFO - Started process (PID=188) to work on /opt/airflow/dags/etl_dags.py
+[2024-07-20T19:34:35.394+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_dags.py for tasks to queue
+[2024-07-20T19:34:35.396+0000] {logging_mixin.py:188} INFO - [2024-07-20T19:34:35.396+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/etl_dags.py
+[2024-07-20T19:34:35.410+0000] {logging_mixin.py:188} INFO - [2024-07-20T19:34:35.408+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/etl_dags.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/etl_dags.py", line 29, in <module>
+    extract_data = PostgresToGCSOperator(
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/google/cloud/transfers/postgres_to_gcs.py", line 109, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 423, in apply_defaults
+    raise AirflowException(f"missing keyword arguments {display}")
+airflow.exceptions.AirflowException: missing keyword arguments 'bucket', 'filename'
+[2024-07-20T19:34:35.410+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/etl_dags.py
+[2024-07-20T19:34:35.426+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_dags.py took 0.040 seconds
+[2024-07-20T19:35:05.848+0000] {processor.py:161} INFO - Started process (PID=193) to work on /opt/airflow/dags/etl_dags.py
+[2024-07-20T19:35:05.849+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_dags.py for tasks to queue
+[2024-07-20T19:35:05.853+0000] {logging_mixin.py:188} INFO - [2024-07-20T19:35:05.852+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/etl_dags.py
+[2024-07-20T19:35:05.867+0000] {logging_mixin.py:188} INFO - [2024-07-20T19:35:05.865+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/etl_dags.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/etl_dags.py", line 29, in <module>
+    extract_data = PostgresToGCSOperator(
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/google/cloud/transfers/postgres_to_gcs.py", line 109, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 423, in apply_defaults
+    raise AirflowException(f"missing keyword arguments {display}")
+airflow.exceptions.AirflowException: missing keyword arguments 'bucket', 'filename'
+[2024-07-20T19:35:05.867+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/etl_dags.py
+[2024-07-20T19:35:05.882+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_dags.py took 0.039 seconds
+[2024-07-20T19:35:36.305+0000] {processor.py:161} INFO - Started process (PID=198) to work on /opt/airflow/dags/etl_dags.py
+[2024-07-20T19:35:36.307+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_dags.py for tasks to queue
+[2024-07-20T19:35:36.310+0000] {logging_mixin.py:188} INFO - [2024-07-20T19:35:36.310+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/etl_dags.py
+[2024-07-20T19:35:36.323+0000] {logging_mixin.py:188} INFO - [2024-07-20T19:35:36.321+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/etl_dags.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/etl_dags.py", line 29, in <module>
+    extract_data = PostgresToGCSOperator(
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/google/cloud/transfers/postgres_to_gcs.py", line 109, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 423, in apply_defaults
+    raise AirflowException(f"missing keyword arguments {display}")
+airflow.exceptions.AirflowException: missing keyword arguments 'bucket', 'filename'
+[2024-07-20T19:35:36.323+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/etl_dags.py
+[2024-07-20T19:35:36.357+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_dags.py took 0.056 seconds
+[2024-07-20T19:36:06.665+0000] {processor.py:161} INFO - Started process (PID=203) to work on /opt/airflow/dags/etl_dags.py
+[2024-07-20T19:36:06.666+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_dags.py for tasks to queue
+[2024-07-20T19:36:06.668+0000] {logging_mixin.py:188} INFO - [2024-07-20T19:36:06.668+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/etl_dags.py
+[2024-07-20T19:36:06.679+0000] {logging_mixin.py:188} INFO - [2024-07-20T19:36:06.678+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/etl_dags.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/etl_dags.py", line 29, in <module>
+    extract_data = PostgresToGCSOperator(
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/google/cloud/transfers/postgres_to_gcs.py", line 109, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 423, in apply_defaults
+    raise AirflowException(f"missing keyword arguments {display}")
+airflow.exceptions.AirflowException: missing keyword arguments 'bucket', 'filename'
+[2024-07-20T19:36:06.680+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/etl_dags.py
+[2024-07-20T19:36:06.696+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_dags.py took 0.035 seconds
+[2024-07-20T19:36:37.044+0000] {processor.py:161} INFO - Started process (PID=208) to work on /opt/airflow/dags/etl_dags.py
+[2024-07-20T19:36:37.045+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_dags.py for tasks to queue
+[2024-07-20T19:36:37.050+0000] {logging_mixin.py:188} INFO - [2024-07-20T19:36:37.050+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/etl_dags.py
+[2024-07-20T19:36:37.064+0000] {logging_mixin.py:188} INFO - [2024-07-20T19:36:37.062+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/etl_dags.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/etl_dags.py", line 29, in <module>
+    extract_data = PostgresToGCSOperator(
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/google/cloud/transfers/postgres_to_gcs.py", line 109, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 423, in apply_defaults
+    raise AirflowException(f"missing keyword arguments {display}")
+airflow.exceptions.AirflowException: missing keyword arguments 'bucket', 'filename'
+[2024-07-20T19:36:37.065+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/etl_dags.py
+[2024-07-20T19:36:37.083+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_dags.py took 0.044 seconds
+[2024-07-20T19:37:07.456+0000] {processor.py:161} INFO - Started process (PID=213) to work on /opt/airflow/dags/etl_dags.py
+[2024-07-20T19:37:07.458+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_dags.py for tasks to queue
+[2024-07-20T19:37:07.460+0000] {logging_mixin.py:188} INFO - [2024-07-20T19:37:07.460+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/etl_dags.py
+[2024-07-20T19:37:07.472+0000] {logging_mixin.py:188} INFO - [2024-07-20T19:37:07.470+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/etl_dags.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/etl_dags.py", line 29, in <module>
+    extract_data = PostgresToGCSOperator(
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/google/cloud/transfers/postgres_to_gcs.py", line 109, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 423, in apply_defaults
+    raise AirflowException(f"missing keyword arguments {display}")
+airflow.exceptions.AirflowException: missing keyword arguments 'bucket', 'filename'
+[2024-07-20T19:37:07.472+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/etl_dags.py
+[2024-07-20T19:37:07.493+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_dags.py took 0.041 seconds
+[2024-07-20T19:37:37.909+0000] {processor.py:161} INFO - Started process (PID=218) to work on /opt/airflow/dags/etl_dags.py
+[2024-07-20T19:37:37.912+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_dags.py for tasks to queue
+[2024-07-20T19:37:37.915+0000] {logging_mixin.py:188} INFO - [2024-07-20T19:37:37.914+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/etl_dags.py
+[2024-07-20T19:37:37.929+0000] {logging_mixin.py:188} INFO - [2024-07-20T19:37:37.928+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/etl_dags.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/etl_dags.py", line 29, in <module>
+    extract_data = PostgresToGCSOperator(
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/google/cloud/transfers/postgres_to_gcs.py", line 109, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 423, in apply_defaults
+    raise AirflowException(f"missing keyword arguments {display}")
+airflow.exceptions.AirflowException: missing keyword arguments 'bucket', 'filename'
+[2024-07-20T19:37:37.929+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/etl_dags.py
+[2024-07-20T19:37:37.942+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_dags.py took 0.037 seconds
+[2024-07-20T19:38:08.347+0000] {processor.py:161} INFO - Started process (PID=223) to work on /opt/airflow/dags/etl_dags.py
+[2024-07-20T19:38:08.349+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_dags.py for tasks to queue
+[2024-07-20T19:38:08.352+0000] {logging_mixin.py:188} INFO - [2024-07-20T19:38:08.352+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/etl_dags.py
+[2024-07-20T19:38:08.369+0000] {logging_mixin.py:188} INFO - [2024-07-20T19:38:08.365+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/etl_dags.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/etl_dags.py", line 29, in <module>
+    extract_data = PostgresToGCSOperator(
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/google/cloud/transfers/postgres_to_gcs.py", line 109, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 423, in apply_defaults
+    raise AirflowException(f"missing keyword arguments {display}")
+airflow.exceptions.AirflowException: missing keyword arguments 'bucket', 'filename'
+[2024-07-20T19:38:08.369+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/etl_dags.py
+[2024-07-20T19:38:08.407+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_dags.py took 0.064 seconds
+[2024-07-20T19:38:38.784+0000] {processor.py:161} INFO - Started process (PID=228) to work on /opt/airflow/dags/etl_dags.py
+[2024-07-20T19:38:38.786+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_dags.py for tasks to queue
+[2024-07-20T19:38:38.791+0000] {logging_mixin.py:188} INFO - [2024-07-20T19:38:38.789+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/etl_dags.py
+[2024-07-20T19:38:38.805+0000] {logging_mixin.py:188} INFO - [2024-07-20T19:38:38.804+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/etl_dags.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/etl_dags.py", line 29, in <module>
+    extract_data = PostgresToGCSOperator(
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/google/cloud/transfers/postgres_to_gcs.py", line 109, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 423, in apply_defaults
+    raise AirflowException(f"missing keyword arguments {display}")
+airflow.exceptions.AirflowException: missing keyword arguments 'bucket', 'filename'
+[2024-07-20T19:38:38.805+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/etl_dags.py
+[2024-07-20T19:38:38.818+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_dags.py took 0.056 seconds
+[2024-07-20T19:39:09.199+0000] {processor.py:161} INFO - Started process (PID=233) to work on /opt/airflow/dags/etl_dags.py
+[2024-07-20T19:39:09.200+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_dags.py for tasks to queue
+[2024-07-20T19:39:09.205+0000] {logging_mixin.py:188} INFO - [2024-07-20T19:39:09.204+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/etl_dags.py
+[2024-07-20T19:39:09.217+0000] {logging_mixin.py:188} INFO - [2024-07-20T19:39:09.215+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/etl_dags.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/etl_dags.py", line 29, in <module>
+    extract_data = PostgresToGCSOperator(
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/google/cloud/transfers/postgres_to_gcs.py", line 109, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 423, in apply_defaults
+    raise AirflowException(f"missing keyword arguments {display}")
+airflow.exceptions.AirflowException: missing keyword arguments 'bucket', 'filename'
+[2024-07-20T19:39:09.218+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/etl_dags.py
+[2024-07-20T19:39:09.235+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_dags.py took 0.041 seconds
+[2024-07-20T19:39:39.597+0000] {processor.py:161} INFO - Started process (PID=238) to work on /opt/airflow/dags/etl_dags.py
+[2024-07-20T19:39:39.601+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_dags.py for tasks to queue
+[2024-07-20T19:39:39.607+0000] {logging_mixin.py:188} INFO - [2024-07-20T19:39:39.606+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/etl_dags.py
+[2024-07-20T19:39:39.628+0000] {logging_mixin.py:188} INFO - [2024-07-20T19:39:39.627+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/etl_dags.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/etl_dags.py", line 29, in <module>
+    extract_data = PostgresToGCSOperator(
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/google/cloud/transfers/postgres_to_gcs.py", line 109, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 423, in apply_defaults
+    raise AirflowException(f"missing keyword arguments {display}")
+airflow.exceptions.AirflowException: missing keyword arguments 'bucket', 'filename'
+[2024-07-20T19:39:39.629+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/etl_dags.py
+[2024-07-20T19:39:39.643+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_dags.py took 0.051 seconds
+[2024-07-20T19:40:09.997+0000] {processor.py:161} INFO - Started process (PID=243) to work on /opt/airflow/dags/etl_dags.py
+[2024-07-20T19:40:09.999+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_dags.py for tasks to queue
+[2024-07-20T19:40:10.003+0000] {logging_mixin.py:188} INFO - [2024-07-20T19:40:10.003+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/etl_dags.py
+[2024-07-20T19:40:10.015+0000] {logging_mixin.py:188} INFO - [2024-07-20T19:40:10.013+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/etl_dags.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/etl_dags.py", line 29, in <module>
+    extract_data = PostgresToGCSOperator(
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/google/cloud/transfers/postgres_to_gcs.py", line 109, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 423, in apply_defaults
+    raise AirflowException(f"missing keyword arguments {display}")
+airflow.exceptions.AirflowException: missing keyword arguments 'bucket', 'filename'
+[2024-07-20T19:40:10.015+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/etl_dags.py
+[2024-07-20T19:40:10.033+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_dags.py took 0.042 seconds
+[2024-07-20T19:40:40.433+0000] {processor.py:161} INFO - Started process (PID=248) to work on /opt/airflow/dags/etl_dags.py
+[2024-07-20T19:40:40.435+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_dags.py for tasks to queue
+[2024-07-20T19:40:40.437+0000] {logging_mixin.py:188} INFO - [2024-07-20T19:40:40.437+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/etl_dags.py
+[2024-07-20T19:40:40.450+0000] {logging_mixin.py:188} INFO - [2024-07-20T19:40:40.449+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/etl_dags.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/etl_dags.py", line 29, in <module>
+    extract_data = PostgresToGCSOperator(
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/google/cloud/transfers/postgres_to_gcs.py", line 109, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 423, in apply_defaults
+    raise AirflowException(f"missing keyword arguments {display}")
+airflow.exceptions.AirflowException: missing keyword arguments 'bucket', 'filename'
+[2024-07-20T19:40:40.451+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/etl_dags.py
+[2024-07-20T19:40:40.465+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_dags.py took 0.036 seconds
+[2024-07-20T19:41:10.842+0000] {processor.py:161} INFO - Started process (PID=253) to work on /opt/airflow/dags/etl_dags.py
+[2024-07-20T19:41:10.843+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_dags.py for tasks to queue
+[2024-07-20T19:41:10.845+0000] {logging_mixin.py:188} INFO - [2024-07-20T19:41:10.845+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/etl_dags.py
+[2024-07-20T19:41:10.856+0000] {logging_mixin.py:188} INFO - [2024-07-20T19:41:10.855+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/etl_dags.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/etl_dags.py", line 29, in <module>
+    extract_data = PostgresToGCSOperator(
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/google/cloud/transfers/postgres_to_gcs.py", line 109, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 423, in apply_defaults
+    raise AirflowException(f"missing keyword arguments {display}")
+airflow.exceptions.AirflowException: missing keyword arguments 'bucket', 'filename'
+[2024-07-20T19:41:10.857+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/etl_dags.py
+[2024-07-20T19:41:10.873+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_dags.py took 0.036 seconds
+[2024-07-20T19:41:41.224+0000] {processor.py:161} INFO - Started process (PID=258) to work on /opt/airflow/dags/etl_dags.py
+[2024-07-20T19:41:41.225+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_dags.py for tasks to queue
+[2024-07-20T19:41:41.229+0000] {logging_mixin.py:188} INFO - [2024-07-20T19:41:41.229+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/etl_dags.py
+[2024-07-20T19:41:41.241+0000] {logging_mixin.py:188} INFO - [2024-07-20T19:41:41.240+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/etl_dags.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/etl_dags.py", line 29, in <module>
+    extract_data = PostgresToGCSOperator(
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/google/cloud/transfers/postgres_to_gcs.py", line 109, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 423, in apply_defaults
+    raise AirflowException(f"missing keyword arguments {display}")
+airflow.exceptions.AirflowException: missing keyword arguments 'bucket', 'filename'
+[2024-07-20T19:41:41.242+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/etl_dags.py
+[2024-07-20T19:41:41.260+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_dags.py took 0.041 seconds
+[2024-07-20T19:42:11.635+0000] {processor.py:161} INFO - Started process (PID=263) to work on /opt/airflow/dags/etl_dags.py
+[2024-07-20T19:42:11.636+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_dags.py for tasks to queue
+[2024-07-20T19:42:11.639+0000] {logging_mixin.py:188} INFO - [2024-07-20T19:42:11.638+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/etl_dags.py
+[2024-07-20T19:42:11.657+0000] {logging_mixin.py:188} INFO - [2024-07-20T19:42:11.655+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/etl_dags.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/etl_dags.py", line 29, in <module>
+    extract_data = PostgresToGCSOperator(
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/google/cloud/transfers/postgres_to_gcs.py", line 109, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 423, in apply_defaults
+    raise AirflowException(f"missing keyword arguments {display}")
+airflow.exceptions.AirflowException: missing keyword arguments 'bucket', 'filename'
+[2024-07-20T19:42:11.657+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/etl_dags.py
+[2024-07-20T19:42:11.678+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_dags.py took 0.047 seconds
+[2024-07-20T19:42:42.066+0000] {processor.py:161} INFO - Started process (PID=268) to work on /opt/airflow/dags/etl_dags.py
+[2024-07-20T19:42:42.071+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_dags.py for tasks to queue
+[2024-07-20T19:42:42.092+0000] {logging_mixin.py:188} INFO - [2024-07-20T19:42:42.091+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/etl_dags.py
+[2024-07-20T19:42:42.113+0000] {logging_mixin.py:188} INFO - [2024-07-20T19:42:42.111+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/etl_dags.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/etl_dags.py", line 29, in <module>
+    extract_data = PostgresToGCSOperator(
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/google/cloud/transfers/postgres_to_gcs.py", line 109, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 423, in apply_defaults
+    raise AirflowException(f"missing keyword arguments {display}")
+airflow.exceptions.AirflowException: missing keyword arguments 'bucket', 'filename'
+[2024-07-20T19:42:42.113+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/etl_dags.py
+[2024-07-20T19:42:42.134+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_dags.py took 0.073 seconds
+[2024-07-20T19:43:12.456+0000] {processor.py:161} INFO - Started process (PID=273) to work on /opt/airflow/dags/etl_dags.py
+[2024-07-20T19:43:12.459+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_dags.py for tasks to queue
+[2024-07-20T19:43:12.462+0000] {logging_mixin.py:188} INFO - [2024-07-20T19:43:12.461+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/etl_dags.py
+[2024-07-20T19:43:12.471+0000] {logging_mixin.py:188} INFO - [2024-07-20T19:43:12.470+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/etl_dags.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/etl_dags.py", line 29, in <module>
+    extract_data = PostgresToGCSOperator(
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/google/cloud/transfers/postgres_to_gcs.py", line 109, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 423, in apply_defaults
+    raise AirflowException(f"missing keyword arguments {display}")
+airflow.exceptions.AirflowException: missing keyword arguments 'bucket', 'filename'
+[2024-07-20T19:43:12.472+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/etl_dags.py
+[2024-07-20T19:43:12.487+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_dags.py took 0.035 seconds
