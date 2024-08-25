@@ -1,40 +1,45 @@
-E-Commerce Data Pipeline Project
+#E-Commerce Data Pipeline Project
 
-Overview
+##Overview
 
 This project involves building a data pipeline for analyzing an e-commerce dataset. The pipeline includes PostgreSQL scripts for data ingestion, an Airflow DAG for orchestrating ETL processes, dbt models for data transformation, and analysis to answer key business questions. The entire setup is containerized using Docker.
 
-Project Structure
+###Project Structure
 PostgreSQL Scripts: Contains scripts to create tables and ingest data.
 Airflow DAG: Defines the Directed Acyclic Graph (DAG) for orchestrating the ETL 
 process.
+
 dbt Project: Models and transforms the data using dbt.
 Analysis: SQL queries and dashboards to answer the analytical questions.
 Docker Compose File: Specifies the configuration for the project resources.
 
-Setup and Configuration
+###Setup and Configuration
 PostgreSQL
 Create Tables and Ingest Data:
 The PostgreSQL scripts named ‘init.sql’ and load_data.sql are located in the postgres folder.
 Run these scripts to set up the database schema and load the initial data.
-Airflow
-DAG Configuration:
+
+##Airflow
+###DAG Configuration:
 The Airflow DAG file ‘etl_dag.py’ is located in the airflow/dags/ directory.
 This DAG orchestrates the ETL process, including data extraction and loading.
-dbt
-dbt Models:
+
+##dbt
+###dbt Models:
 The dbt project is located in the ecommerce_dbt_project/ directory.
 Models are organized into staging, intermediate, and final layers.
 Staging models extract raw data, intermediate models perform transformations, and final models produce the results for analysis.
-Configuration:
+
+###Configuration:
 The dbt_project.yml file in the ecommerce_project.yml/ directory configures the dbt project.
 The profile.yml file specifies the connection details for the data warehouse.
 Docker Compose
-Setup:
+
+###Setup:
 The docker-compose.yml file defines the Docker services for PostgreSQL and Airflow.
 Use docker-compose up to start the postgres and airflow services, while ‘dbt run’ to run the dbt models.
 
-Analytical Questions
+##Analytical Questions
 Which product categories have the highest sales?
 I selected the top 10 using the ‘Limit’ function
 SQL Query: SELECT
@@ -62,12 +67,11 @@ ORDER BY
    total_orders DESC
 LIMIT 10;
 
-Getting Started
+##Getting Started
 
 1. Clone the repository
-git clone <repository-url>
-cd <repository-folder>
-
+git clone https://github.com/sulaimonibrahim/Ecommerce_Project.git
+cd Ecommerce_Project
 2. Set Up PostgreSQL:
 Run the PostgreSQL scripts to create tables and ingest data
 
