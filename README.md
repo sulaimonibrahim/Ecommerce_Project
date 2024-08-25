@@ -70,18 +70,20 @@ LIMIT 10;
 ##Getting Started
 
 1. Clone the repository
-git clone https://github.com/sulaimonibrahim/Ecommerce_Project.git
-cd Ecommerce_Project
-2. Set Up PostgreSQL:
+i. git clone https://github.com/sulaimonibrahim/Ecommerce_Project.git
+
+ii. cd Ecommerce_Project
+
+3. Set Up PostgreSQL:
 Run the PostgreSQL scripts to create tables and ingest data
 
-3. Start Docker container
+4. Start Docker container
 docker-compose up
 
-4. Run dbt models
+5. Run dbt models
 dbt run
 
-5. Access Airflow:
+6. Access Airflow:
 Open the Airflow web interface to monitor and manage DAGs.
 
 Dependencies:
