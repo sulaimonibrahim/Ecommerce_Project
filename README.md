@@ -1,93 +1,63 @@
-#E-Commerce Data Pipeline Project
+# 🛒 E-Commerce Data Pipeline Project
 
-##Overview
+## 📌 Overview
+This project implements a complete data pipeline for analyzing an e-commerce dataset. It includes:
 
-This project involves building a data pipeline for analyzing an e-commerce dataset. The pipeline includes PostgreSQL scripts for data ingestion, an Airflow DAG for orchestrating ETL processes, dbt models for data transformation, and analysis to answer key business questions. The entire setup is containerized using Docker.
+- **PostgreSQL scripts** for data ingestion  
+- **Airflow DAG** for orchestrating ETL workflows  
+- **dbt models** for data transformation  
+- **SQL-based analysis** to answer key business questions  
+- **Docker** for containerizing all services  
 
-###Project Structure
-PostgreSQL Scripts: Contains scripts to create tables and ingest data.
-Airflow DAG: Defines the Directed Acyclic Graph (DAG) for orchestrating the ETL 
-process.
+This setup demonstrates a modern analytics engineering workflow from raw data to insights.
 
-dbt Project: Models and transforms the data using dbt.
-Analysis: SQL queries and dashboards to answer the analytical questions.
-Docker Compose File: Specifies the configuration for the project resources.
+---
 
-###Setup and Configuration
-PostgreSQL
-Create Tables and Ingest Data:
-The PostgreSQL scripts named ‘init.sql’ and load_data.sql are located in the postgres folder.
-Run these scripts to set up the database schema and load the initial data.
+## 📁 Project Structure
 
-##Airflow
-###DAG Configuration:
-The Airflow DAG file ‘etl_dag.py’ is located in the airflow/dags/ directory.
-This DAG orchestrates the ETL process, including data extraction and loading.
+### **PostgreSQL Scripts**
+Located in the `postgres/` directory:
+- `init.sql` – Creates database tables  
+- `load_data.sql` – Loads raw e-commerce data  
 
-##dbt
-###dbt Models:
-The dbt project is located in the ecommerce_dbt_project/ directory.
-Models are organized into staging, intermediate, and final layers.
-Staging models extract raw data, intermediate models perform transformations, and final models produce the results for analysis.
+### **Airflow DAG**
+Located at `airflow/dags/etl_dag.py`:
+- Manages the end-to-end ETL workflow  
 
-###Configuration:
-The dbt_project.yml file in the ecommerce_project.yml/ directory configures the dbt project.
-The profile.yml file specifies the connection details for the data warehouse.
-Docker Compose
+### **dbt Project**
+Located in `ecommerce_dbt_project/`:
+- **Staging models:** Extract raw source data  
+- **Intermediate models:** Apply business logic  
+- **Final models:** Produce analytical outputs  
 
-###Setup:
-The docker-compose.yml file defines the Docker services for PostgreSQL and Airflow.
-Use docker-compose up to start the postgres and airflow services, while ‘dbt run’ to run the dbt models.
+### **Configuration Files**
+- `dbt_project.yml` – Configures the dbt project  
+- `profiles.yml` – Defines dbt connection settings  
+- `docker-compose.yml` – Defines PostgreSQL and Airflow services  
 
-##Analytical Questions
-Which product categories have the highest sales?
-I selected the top 10 using the ‘Limit’ function
-SQL Query: SELECT
-   product_category_name,
-   total_sales
-FROM
-   ecomm.fct_sales_by_category
-ORDER BY
-   total_sales DESC
-LIMIT 10; 
-What is the average delivery time for orders?
-I rounded the figure up to zero decimal
-SELECT
-   CAST(ROUND(avg_delivery_time_days, 0) AS INT64) AS avg_delivery_time
-FROM
-   ecomm.fct_avg_delivery_time
-Which states have the highest number of orders?
-I selected the top 10 using the ‘Limit’ function
-SQL Query: SELECT
-   customer_state,
-   total_orders
-FROM
-   ecomm.fct_orders_by_state
-ORDER BY
-   total_orders DESC
-LIMIT 10;
+---
 
-##Getting Started
+## ⚙️ Setup and Configuration
 
-1. Clone the repository
-i. git clone https://github.com/sulaimonibrahim/Ecommerce_Project.git
+### **1. PostgreSQL Setup**
+Run the scripts inside the `postgres/` directory to initialize the schema and ingest data:
 
-ii. cd Ecommerce_Project
+```bash
+psql -f init.sql
+psql -f load_data.sql
 
-3. Set Up PostgreSQL:
-Run the PostgreSQL scripts to create tables and ingest data
 
-4. Start Docker container
+# Getting Started
+## Clone the repository
+git clone https://github.com/sulaimonibrahim/Ecommerce_Project.git
+cd Ecommerce_Project
+
+## Start Docker Services
 docker-compose up
 
-5. Run dbt models
+## Run dbt models
 dbt run
 
-6. Access Airflow:
-Open the Airflow web interface to monitor and manage DAGs.
+## Access Airflow (visit the airflow UI)
+http://localhost:8080
 
-Dependencies:
-PostgreSQL
-Airflow
-dbt
-Docker
